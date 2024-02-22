@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>add task</title>
+<style type="text/css">
+.main{
+margin-left: 500px; 
+margin-top: 150px; 
+}
+form{
+align-items: center;
+justify-content: center; 
+width: 300px; 
+font-size: 1rem; 
+}
+fieldset{
+padding: 20px; 
+width: 350px;
+border: 5px solid black;
+}
+h1{
+font-size: 3rem ;
+}
+button{
+font-size: 1rem;
+margin-right: 50px;
+}
+</style>
+</head>
+<body>
+<div class=main>
+<h1>Add Task</h1>
+<form action="add-task" method=post>
+<fieldset>
+<legend>Enter the task here</legend>
+<label>Task Name :</label><input type="text" name=tname> <br> <br>
+<label>Task Description :</label><input type="text" name=tdesp> <br> <br>
+<button>Add</button> <button>Cancel</button>
+</form>
+</fieldset>
+</div>
+</body>
+</html>

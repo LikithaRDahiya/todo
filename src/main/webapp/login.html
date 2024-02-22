@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+* {
+	font-family: cursive;
+	font-size: 1rem;
+}
+
+table {
+	height: 280px;
+	width: 550px;
+	border: 2px solid black;
+	padding: 30px;
+	margin-top: 180px;
+	margin-left: 550px;
+	background-color: silver;
+	width: 400px;
+	border-radius: 10px;
+}
+
+button {
+	margin: 5px;
+	margin-left: 30px;
+	padding: 10px;
+	width: 100px;
+	border-radius: 20px;
+	background-color: orange;
+	border-color: yellow;
+}
+
+button:hover {
+	background-color: yellow;
+}
+
+input {
+	border: 1px solid black;
+}
+</style>
+</head>
+<body>
+	<form action="login" method=post>
+		<table>
+			<tr>
+				<td>Username:</td>
+				<td><input type="email" name=email></td>
+			</tr>
+			<tr>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Password:</td>
+				<td><input type="password" name=password></td>
+			</tr>
+			<tr>
+				<td></td>
+			</tr>
+			<tr>
+				<td>
+					<button type="submit" name=submit>login</button>
+				</td>
+				<td>
+					<button type="reset">cancel</button>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"><p>
+						Dont have an account? <a href="signup.html">signup</a>
+					</p></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+*{
+font-family: cursive;
+ 
+}
+table{
+border: 2px solid black;
+padding: 30px;
+margin-top: 180px;
+margin-left: 500px;
+background-color: teal; 
+width: 450px;
+border-radius: 10px; 
+color: white; 
+font-size: 1.3em; 
+}
+button{
+margin: 5px;
+margin-left: 30px;
+padding: 10px;
+width: 100px;
+border-radius: 20px;
+background-color: white;
+border-color: black;
+color: black;
+}
+button:hover{
+	background-color: silver;
+}
+input{
+border: 1px solid black;
+border-radius: 5px;
+font-size: 0.8em;
+}
+</style>
+</head>
+<body>
+<form action="signup" method=post>
+	<table >
+	<tr>
+	<td>Name :</td>
+	<td><input type="text" required="required" name=name></td>
+	</tr>
+	<tr>
+	<td>    </td>
+	</tr>
+	<tr>
+	<td>email :</td>
+	<td><input type="email" required="required" name=email></td>
+	</tr>
+	<tr>
+	<td>    </td>
+	</tr>
+	<tr>
+	<td>password :</td>
+	<td><input type="password" required="required" name=password></td>
+	</tr>
+	<tr>
+	<td>    </td>
+	</tr>
+	<tr>
+	<td>dob :</td>
+	<td><input type="date" name=dob></td>
+	</tr>
+	<tr>
+	<td>    </td>
+	</tr>
+	<tr>
+	<td>number :</td>
+	<td><input type="tel" pattern="{10}" name=number></td>
+	</tr>
+	<tr>
+	<td>Gender :</td>
+	<td><input type="radio" name=gender value=male>Male<input type="radio" name=gender value=female>Female</td>
+	</tr>
+	<tr>
+	<td>    </td>
+	</tr>
+	<tr>
+	<td><button type="submit" name=submit>signup</button></td>
+	<td><button type="reset">cancel</button></td>
+	</tr>
+	<tr>
+	<td colspan="2"><p>Already have an account? <a href="./login.html">click here</a></p></td>
+	</tr>
+		
+	</table>
+	</form>
+</body>
+</html>
